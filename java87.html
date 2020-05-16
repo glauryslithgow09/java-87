@@ -1,0 +1,55 @@
+<!--<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Domumento</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        var oracion = 'Mañana son las olimpiadas de matematica ';
+        var patron1 = /son/;
+        var vector1 = patron1.exec(oracion);
+        document.write(vector1.index);
+        document.write('<br>');
+        document.write(vector1.input);
+        document.write('<br>');
+        var patron2 = /lax/;
+        var vector2 = patron2.exec(oracion);
+        document.write(vector2);
+    </script>
+
+</body>
+
+</html>-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Documento</title>
+    <meta charset="UTF-8">
+</head>
+
+<body style="background-color: deepskyblue;">
+
+    <script>
+        var oracion = 'Hoy es un dia muy especial para todos';
+        var patron = /es/gi;
+        var vec = patron.exec(oracion);
+        document.write(vec.index); //0
+        document.write('<br>');
+        vec = patron.exec(oracion);
+        document.write(vec.index); //4
+        document.write('<br>');
+        vec = patron.exec(oracion);
+        document.write(vec.index); //18
+        document.write('<br>');
+        vec = patron.exec(oracion);
+        document.write(vec); //null
+    </script>
+
+</body>
+
+</html>
